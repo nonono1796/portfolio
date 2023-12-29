@@ -1,0 +1,186 @@
+
+/* 共通部分 */
+body{
+    font-family: 'Kiwi Maru', serif,"Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    background-image: linear-gradient(to top, #FFFEFF  0%, #FFFEFF  1%, #D7FFFE  100%);
+}
+.slider .slick-prev{
+    left: 30%;
+    bottom: 10%;
+}
+.slider .slick-next{
+    right: 30%;
+}
+.slider .slick-prev,.slider .slick-next{
+    z-index: 100;
+    
+}
+/* 画像アニメーション */
+@keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15); /* 拡大率 */
+    }
+  }
+  /* スライダーのズームアニメーション */
+  .add-animation {
+    animation: zoomUp 15s linear 0s normal both;
+  }
+/* ドットの位置 */
+.slick-dots{
+    bottom: 40px!important;
+    margin: 0;
+    z-index: 50;
+}
+/* ドットの色 */
+.slick-dots li button:before
+{    
+    color: white;
+
+}
+.slick-dots li.slick-active button:before
+{
+    color: white;
+}
+#top{
+    position: relative;
+}
+/* 無駄な余白を消す（これ以上弄らない） */
+#top > ul{
+    margin: 0;
+}
+/* topボタンのデザイン */
+.back-btn{
+    font-size: 150%;
+    text-decoration: none;
+    }
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    th,td{
+        padding-top: 30px;
+    }
+
+    /* .topic-grandchildの非表示 */
+    .topic-grandchild{
+        display: none;
+    }
+    .topic-child{
+        min-height: 100%;
+    }
+.back-btn:hover{
+    text-decoration: underline;
+}
+.back-btn:active{
+    color: black;
+}
+.back-btn:visited{
+    color: black;
+}
+/* PC用 */
+@media screen and (min-width: 1025px) {
+ .img-height{
+    height: 80vh;
+ }
+.slider img{
+    width: 100%;
+    height: 100%;
+} 
+
+#title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    letter-spacing: 1em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+/* .topic-childの設定 */
+.topic-child{
+    margin: 30px 150px 0 150px;
+    font-size: 18px;
+    line-height: 2;
+    display: flex;
+    min-height: 200px;
+}
+
+
+    /* 店舗情報、位置の装飾 */
+#biginf{
+    margin: 80px 30px 0 30px;
+    border: double 5px black;
+    position: relative;
+    display: flex
+}
+.inf1{
+    width: 60%;
+    line-height: 3;
+    margin: 30px;
+}
+.inf1 td{
+    font-size: 16px;
+    padding-left: 5%;
+}
+
+.inf2{
+    width: 40%;
+    height: 100%;
+    padding: 1%;
+}
+.google{
+    width: 100%;
+}
+}
+
+/* スマホ用 */
+@media screen and (max-width: 1024px) {
+    .slider img{
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+    } 
+    .img-height{
+        height: 60vh;
+     }
+    #title{
+        font-size: 7vw;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        letter-spacing: 0.3em;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
+    
+    .inf2{
+        width: 100%;
+    }
+    .google{
+        width: 100%;
+        padding: 2%;
+    }
+    .topic-child{
+        margin: 10%;
+        font-size: 1em;
+        line-height: 2;
+        display: flex;
+        /* min-height: 200px; */
+        letter-spacing:0.05em;       
+    }
+    .inf1{
+        margin: 0 5% 5% 5%;
+        border: double 5px black;
+        line-height: 1;
+        padding:2% ;
+    }
+    .inf1 td{
+        padding-left: 2%;
+    }
+}

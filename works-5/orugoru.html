@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>映えるならここ！小樽に行ったら訪れたい場所</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <!-- googleフォント      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- カルーセル用 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <!-- カルーセル -->
+                <ul class="slider">
+                    <li><div class="img-height"><img src="img/orugoru1.jpg" alt="小樽運河"></div></li>
+                    <li><div class="img-height"><img src="img/orugoru2.jpg" alt="昼の運河"></div></li>
+                    <li><div class="img-height"><img src="img/unga3.jpg" alt="小樽運河"></div></li>
+                </ul>
+                <h1 id="title">オルゴール堂</h1>
+            </div>
+        </header>
+        <!-- ここから情報 -->
+        <main>
+            <!-- 大枠 -->
+            <div id="topic-patent">
+                <!-- ここで詳細 -->
+                <div class="topic-child">
+                    <p class="topic-grandchild">
+                    メルヘン通りに佇む日本最大級のオルゴール専門店です。<br>
+                    建物は大正4年に建設されたもので、奥ゆかしさを感じられます。装飾が施された天井や手すりの装飾、2階の回廊などは作られた当時のまま残されていて私たちも使う事が出来ます。<br>
+                    <br>
+                    店内には約3,200種類のオルゴールが並べられており、広々とした趣きある空間に、無数のオルゴールが並ぶ様子は圧巻です。<br>
+                    おすすめは２階からの光景で１階の煌びやかな店内を一望する事ができ、絶好のフォトスポットになっています。<br>
+                    また2階にはかなり高級なオルゴールや何世紀も前に実際に使われていたオルゴールを見る音もでき、博物館のような楽しみ方もできます。<br>
+
+                    </p>
+                </div>
+                <!-- 店舗情報、位置 -->
+                <div id="biginf">
+                <div class="inf1" >
+
+                   <table>
+                    <tr>
+                        <th>所在地</th>
+                        <td>北海道小樽市住吉町４丁目４−１</td>
+                    </tr>
+                    <tr>
+                        <th>アクセス</th>
+                        <td>JR南小樽駅より徒歩7分</td>
+                    </tr>
+                    <tr>
+                        <th>営業時間</th>
+                        <td>9:00~18:00</td>
+                    </tr>
+                    <tr>
+                        <th>関連情報</th>
+                        <td>公式サイトは<a href="https://www.otaru-orgel.co.jp">こちら</a></td>
+                    </tr>
+                   </table>                    
+                </div>
+                <!-- googlemap -->
+                <div class="inf2">
+                    <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.775369174227!2d141.0029411261525!3d43.19322397112765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae05a5c0c6207%3A0xb4994e82f592e5c7!2z5bCP5qi944Kq44Or44K044O844Or5aCCIOacrOmkqA!5e0!3m2!1sja!2sjp!4v1702111373374!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+                <div class="btn">
+                <a class="back-btn" href="otaru.html">TOPに戻る</a>
+                </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="page.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$('.slider')
+        // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+        .on("init", function () {
+        $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+        })
+        // スライダーの基本設定
+        .slick({
+		autoplay: true,
+		dots: true,
+        fade: true,
+        autoplaySpeed:5000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        speed: 2000,
+        accessibility :true,
+	})
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+</script>
+    </body>
+</html>

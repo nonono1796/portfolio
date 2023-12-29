@@ -1,0 +1,209 @@
+/* pc・スマホ共通 */
+body{
+    font-family: 'Kiwi Maru', serif,"Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;;
+}
+.slider .slick-prev{
+    left: 30%;
+    bottom: 10%;
+}
+.slider .slick-next{
+    right: 30%;
+    ;
+}
+.slider .slick-prev,.slider .slick-next{
+    z-index: 100;
+}
+/* ドットの位置 */
+.slick-dots{
+    bottom: 40px!important;
+    margin: 0;
+    z-index: 50;
+}
+#top{
+    position: relative;
+}
+/* ドットの色 */
+.slick-dots li button:before
+{    
+    color: white;
+
+}
+.slick-dots li.slick-active button:before
+{
+    color: white;
+}
+
+/* 無駄な余白を消す（これ以上弄らない） */
+#top > ul{
+    margin: 0;
+}
+@keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15); /* 拡大率 */
+    }
+  }
+  /* スライダーのズームアニメーション */
+  .add-animation {
+    animation: zoomUp 15s linear 0s normal both;
+  }
+  /* スクロール矢印位置 */
+  #scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%,-50%);
+  }
+
+  /* スクロールアニメーション */
+
+
+  /* スクロール矢印 */
+  .dli-chevron-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    line-height: 1;
+    width: 4em;
+    height: 4em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+  }
+  .contents  img:hover{
+    filter: brightness(0.4);
+}
+.position{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.position2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.name{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 1px 4px black;
+}
+.exp{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+}
+
+
+/* pc用 */
+    @media screen and (min-width: 521px) {
+#spot{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contents{
+    width: 33.33%;
+    height: 300px;
+    position: relative;
+}
+.contents img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.position{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.position2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+.name{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 1px 4px black;
+}
+.exp{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+}
+
+.slider img{
+    width: 100%;
+    height: 850px;
+}
+#top{
+    position: relative;
+}
+#title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    letter-spacing: 1em;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+}
+/* pc用ここまで */
+
+/* スマホ用 */
+@media screen and (max-width: 520px) {
+
+    #spot{
+        display: block;
+    }
+    .slider img{
+        width: 100%;
+        height: 500px;
+    }
+    #top{
+        position: relative;
+    }
+    #title{
+        font-size: 30px;
+        color: white;
+        text-shadow: 1px 1px 4px black;
+        letter-spacing: 1em;
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%)
+    }
+    .contents{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+    }
+    .contents img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #scroll{
+        display: none;
+    }
+
+}

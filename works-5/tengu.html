@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>映えるならここ！小樽に行ったら訪れたい場所</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <!-- googleフォント      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- カルーセル用 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <!-- カルーセル -->
+                <ul class="slider">
+                    <li><div class="img-height"><img src="img/tengu1.jpg" alt="北一ホール"></div></li>
+                    <li><div class="img-height"><img src="img/tengu2.jpg" alt="ガス灯"></div></li>
+                    <li><div class="img-height"><img src="img/tengu3.jpg" alt="ケーキ"></div></li>
+                </ul>
+                <h1 id="title">天狗山</h1>
+            </div>
+        </header>
+        <!-- ここから情報 -->
+        <main>
+            <!-- 大枠 -->
+            <div id="topic-patent">
+                <!-- ここで詳細 -->
+                <div class="topic-child">
+                    <p class="topic-grandchild">
+                        小樽市内から車で15分の位置に位置する標高標高532mの小樽のシンボル的な存在の山です。<br>
+                        山麓から展望台のある山頂まではロープウェイで約4分。ノスタルジックな小樽の街並みを眺めながら空中散歩を楽しめます。<br>
+                        ここは函館山・藻岩山の夜景と並び「北海道三大夜景」といわれる夜景スポットでもあり。山頂には展望台が5つあり、異なる角度から眼下に広がる絶景が見られるのも魅力です。<br>
+                        <br>
+                        山頂には更にシマリス公園もあります。園内では数多くのシマリス達がは放し飼いされており、自由に餌を与え触れ合うことができます。<br>
+                        日没まで開園しているのでここに夜景が見られるまで滞在するのもいいかもしれません。
+                    </p>      
+                </div>
+                <!-- 店舗情報、位置 -->
+                <div id="biginf">
+                <div class="inf1" >
+
+                   <table>
+                    <tr>
+                        <th>所在地</th>
+                        <td>小樽市最上2-16-15</td>
+                    </tr>
+                    <tr>
+                        <th>アクセス</th>
+                        <td>JR小樽駅から北海道中央バス天狗山ロープウェイ線で20分<br>
+                        バス：天狗山ロープウェイ下車、徒歩すぐ<br>
+                        車:札樽道小樽ICから国道5号経由4.5km15分</td>
+                    </tr>
+                    <tr>
+                        <th>営業時間（ロープウェイ）</th>
+                        <td>上り9時～20時48分(季節などにより時間変更あり、要問合せ)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>関連情報</th>
+                        <td>公式サイトは<a href="https://tenguyama.ckk.chuo-bus.co.jp">こちら</a>（シマリス公園の情報もこちらから確認出来ます）</td>
+                    </tr>
+                   </table>                    
+                </div>
+                <!-- googlemap -->
+                <div class="inf2">
+                    <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.9486453146233!2d140.97023753960224!3d43.1736735261327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae11e0cac309d%3A0x4c8708338436990f!2z5aSp54uX5bGx44Ot44O844OX44Km44Kn44Kk5bGx6aCC6aeF!5e0!3m2!1sja!2sjp!4v1701755763466!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+                <div class="btn">
+                <a class="back-btn" href="index.html">TOPに戻る</a>
+                </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="page.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$('.slider')
+        // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+        .on("init", function () {
+        $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+        })
+        // スライダーの基本設定
+        .slick({
+		autoplay: true,
+		dots: true,
+        fade: true,
+        autoplaySpeed:5000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        speed: 2000,
+        accessibility :true,
+	})
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+</script>
+    </body>
+</html>

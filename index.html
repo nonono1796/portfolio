@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>SAMURAI ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="big">
+      <div class="container">
+          <a class="header-logo" href="#"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="pnav">
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="img/bars.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a href="#" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
+       <a class="menu" href="#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a>
+       <a class="menu" href="#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILL</a>
+       <a class="menu" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a>
+       <a class="menu" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>        
+        </nav>
+      </div>
+    </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- mv -->
+      <div class="mv">
+        <div class="mv-container">
+          <img src="img/icebrake.png" alt="タイトル">
+          <div class="message">
+            <img  src="img/message.PNG" alt="メッセージ">
+          </div>
+        </div>
+      </div>
+      <!-- /mv -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="https://nonono1796.github.io/otaru/">
+              <div class="works-img"><img src="img/works/otaru.png" alt="html" /></div>
+              <p class="works-name">小樽のプロモーションサイト</p>
+              <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
+            </a>
+            <a class="works-item" href="works-1.html">
+              <div class="works-img"><img src="img/works/html1.png" alt="html1" /></div>
+              <p class="works-name">コーポレートサイト</p>
+              <p class="works-info">HTML/CSS/JavaScript/jQuery/レスポンシブ対応</p>
+            </a>
+            <a class="works-item" href="works-2.html">
+              <div class="works-img"><img src="img/works/html2.png" alt="html2" /></div>
+              <p class="works-name">プロフィールサイト</p>
+              <p class="works-info">HTML/CSS</p>
+            </a>
+            <a class="works-item" href="works-3.html">
+              <div class="works-img"><img src="img/works/wordpress1.png" alt="WordPress" /></div>
+              <p class="works-name">美容室のHP</p>
+              <p class="works-info">WordPress</p>
+            </a>
+            <a class="works-item" href="works-4.html">
+              <div class="works-img"><img src="img/works/photoshop.png" alt="Photoshop" /></div>
+              <p class="works-name">ITスクールのバナー</p>
+              <p class="works-info">Photoshop</p>
+            </a>
+            <a class="works-item" href="works-6.html">
+              <div class="works-img"><img src="img/works/wordpress2.png" alt="WordPress2" /></div>
+              <p class="works-name">大学のHP</p>
+              <p class="works-info">WordPress/PHP</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/html.png" alt="html"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML/CSS</h3>
+                <p class="skill-text">
+                  スマホで見ても表示崩れのないレスポンシブ対応も可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/wordpress.png" alt="wordpress"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">WordPress</h3>
+                <p class="skill-text">
+                  WordPress製の店舗HP・企業HP・メディアサイトなど、Webサイトを0から構築することが可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/js.png" alt="javascript"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-text">
+                  お問い合わせフォームや自動スクロールなど動きのあるWebサイトを作る事が可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/figma.png" alt="photoshop"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Fimga</h3>
+                <p class="skill-text">
+                  Webサイトのデザインやワイヤーフレームを作ることが可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/jquery.png" alt="jquery"></p>
+              <div class="skill-body">
+                <h3 class="skill-name">jQuery</h3>
+                <p class="skill-text">
+                  Webサイトにフェードイン・フェードアウトなどリッチな動きをつけることが可能です。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/skills/php.png" alt=" PHP"></p>
+              <div class="skill-body">
+                <h3 class="skill-name"> PHP</h3>
+                <p class="skill-text">
+                  お問い合わせフォームなど作成できます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="title">ABOUT</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/about.png" alt="about">
+            </p>
+            <div class="profile-body">
+              <p>
+                野澤光希
+              </p>
+              <p>
+                愛知県出身熊本在住。2021年より3年間医療業界で事務職として務めております。PCでの仕事の楽しさや今後もスキルをつけたいと思いからプログラミングという分野に興味を持ち学習を始めました。
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">メールまたは下記フォームにてお願いいたします。
+          </p>
+          <a href="mailto:mitsukinozawa1796@gmail.com"><img class="mail" src="img/mail.png" alt=""></a>
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="honeypot" style="display:none">
+            <!-- STATIC FORMSのアクセスキー -->
+            <input type="hidden" name="accessKey" value="b1fc6783-ef5a-4f00-9ad7-e372c470518c">
+            <!--メールのタイトル-->
+            <input type="hidden" name="subject" value="お問い合わせフォーム" />
+            <!--送信先のメールアドレスをvalueに設定する-->
+            <input type="hidden" name="replyTo" value="romecitizens@gmail.com">
+            <!--redirectToのURLは公開後のURLへリンクする-->
+            <input type="hidden" name="redirectTo" value="">
+            <table border="2">
+              <tr>
+                <td>お名前</td>
+            <td>
+            <input type="text" name="user_name">
+                            </td>
+                       </tr>
+                        <tr>
+                            <td>メールアドレス</td>
+                            <td>
+                                <input type="text" name="user_email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>お問い合わせ種別</td>
+                            <td>
+                                <select name="category">
+                                    <option value="選択してください">選択してください</option>
+                                    <option value="ご意見やご感想">ご要望</option>
+                                    <option value="不具合について">ご意見やご感想</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>お問い合わせ内容</td>
+                            <td>
+                                <!-- cols属性＝入力欄の幅（文字数）、rows属性＝入力欄の高さ（行数） -->
+                                <textarea name="message" cols="30" rows="10"></textarea>
+                            </td>
+                       </tr>
+                    </table>
+                    <input type="submit" value="送信">
+                </form>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;NOZAWA MITSUKI</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>

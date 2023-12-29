@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>映えるならここ！小樽に行ったら訪れたい場所</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+       
+        <!-- googleフォント      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- カルーセル用 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+         <link rel="stylesheet" href="otaru.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <ul class="slider">
+                    <li><img src="img/unga1.jpg" alt="小樽運河"></li>
+                    <li><img src="img/tengu1.jpg" alt="天狗山"></li>
+                    <li><img src="img/ao1.jpg" alt="青の洞窟"></li>
+                    <li><img src="img/tesen1.jpg" alt="手宮線跡地"></li>
+                    <li><img src="img/kitaiti1.jpg" alt="北一"></li>
+                    <li><img src="img/lutao1.jpg" alt="ルタオ"></li>
+                    <li><img src="img/orugoru1.jpg" alt="小樽オルゴール堂"></li>
+                    <li><img src="img/kyandoru1.jpg" alt="キャンドル工房"></li>
+                </ul>
+                <h1 id="title">小樽</h1>
+            </div>
+            <div id="scroll">
+                <span class="dli-chevron-down"></span>
+                <p>Scroll down</p>
+            </div>
+        </header>
+        <main>
+            <div id="spot">
+            <div class="contents">
+                <a href="unga.html"><img src="img/unga1.jpg" alt="小樽運河"></a>
+                <div class="position">
+                    <p class="name">小樽運河</p>
+                </div>
+                <div class="position2">
+                     <p class="exp">今と昔を繋ぐ運河</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="tengu.html"><img src="img/tengu1.jpg" alt="天狗山"></a>
+                <div class="position">
+                    <p class="name">天狗山</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">眼下に広がる絶景</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="ao.html"><img src="img/ao1.jpg" alt="青の洞窟"></a>
+                <div class="position">
+                    <p class="name">青の洞窟</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">広がるコバルトブルー</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="temiyasen.html"><img src="img/tesen1.jpg" alt="手宮線跡"></a>
+                <div class="position">
+                    <p class="name">手宮線跡</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">小樽の鉄道遺産</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="kitaiti.html">
+                <img src="img/kitaiti1.jpg" alt="北一"></a>
+                <div class="position">
+                    <p class="name">北一ホール</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">ガス灯輝くカフェ</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="lutao.html"><img src="img/lutao1.jpg" alt="ルタオ"></a>
+                <div class="position">
+                     <p class="name">ルタオ</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">北海道の銘菓</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="orugoru.html"><img src="img/orugoru1.jpg" alt="オルゴール堂"></a>
+                <div class="position">
+                    <p class="name">小樽オルゴール堂</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">ノスタルジックなオルゴール専門店</p>
+                </div>
+            </div>
+            <div class="contents">
+                <a href="kyandoru.html"><img src="img/kyandoru1.jpg" alt="キャンドル工房"></a>
+                <div class="position">
+                    <p class="name">キャンドル工房</p>
+                </div>
+                <div class="position2">
+                    <p class="exp">暖かな燈灯る工房</p>
+                </div>
+            </div>
+            </div>
+            
+        </main>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$('.slider')
+        // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+        .on("init", function () {
+        $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+        })
+        // スライダーの基本設定
+        .slick({
+		autoplay: true,
+		dots: true,
+        fade: true,
+        autoplaySpeed:2000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        speed: 2000,
+        accessibility :true,
+	})
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+
+</script>
+    </body>
+
+</html>

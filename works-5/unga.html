@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>映えるならここ！小樽に行ったら訪れたい場所</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <!-- googleフォント      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- カルーセル用 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <!-- カルーセル -->
+                <ul class="slider">
+                    <li><div class="img-height"><img src="img/unga1.jpg" alt="小樽運河"></div></li>
+                    <li><div class="img-height"><img src="img/unga2.jpg" alt="昼の運河"></div></li>
+                    <li><div class="img-height"><img src="img/unga3.jpg" alt="小樽運河"></div></li>
+                </ul>
+                <h1 id="title">小樽運河</h1>
+            </div>
+        </header>
+        <!-- ここから情報 -->
+        <main>
+            <!-- 大枠 -->
+            <div id="topic-patent">
+                <!-- ここで詳細 -->
+                <div class="topic-child">
+                    <p class="topic-grandchild">
+                    小樽の象徴でもある運河、北海道開拓の玄関として大正の時代から使われてきました。<br>
+                    今はもう運河としては使われていませんが、運河沿いの建築物からは歩んだ歴史が感じられ,
+                    夜には川沿いの石造り倉庫のライトアップと共にと63基のガス灯が灯り、
+                    昼とは違った姿を見せてくれます。<br><br>
+                    おすすめのフォトスポットは浅草橋街園でゆったりとカーブを描く運河や石造りの倉庫など小樽運河のイメージ写真でもよく使われている風景を写真に収めることができます。<br>
+                    またクルージングもおすすめです。40分かけてくまなく巡るクルーズは誰かに話したくなるような想い出のひとつになるはずです。<br>
+                    クルージングは当日の予約も可能ですが、人数に限りがあるため公式サイトから事前に予約しておくのをおすすめします。
+                    </p>
+                </div>
+                <!-- 店舗情報、位置 -->
+                <div id="biginf">
+                <div class="inf1" >
+
+                   <table>
+                    <tr>
+                        <th>所在地</th>
+                        <td>北海道小樽市港町５</td>
+                    </tr>
+                    <tr>
+                        <th>アクセス</th>
+                        <td>JR小樽駅より徒歩10分</td>
+                    </tr>
+                    <tr>
+                        <th>営業時間</th>
+                        <td>・ガス灯 点灯時間
+                            ・小樽運河散策路　日没～24：00（6月～8月は18：00～24：00）<br>
+                            ・北運河散策路　光センサーで点灯・消灯（6月～8月は18：00～翌朝4：00）<br>
+                            ・運河プラザ前ガス灯　日没～24：00 <br>
+                            ・運河倉庫群ライトアップ　日没～22：30</td>
+                    </tr>
+                    <tr>
+                        <th>関連情報</th>
+                        <td>小樽運河クルーズ公式サイトは<a href="https://otaru.cc">こちら</a></td>
+                    </tr>
+                   </table>                    
+                </div>
+                <!-- googlemap -->
+                <div class="inf2">
+                    <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.550996479221!2d141.00058507615293!3d43.19793127112732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae172267a10df%3A0x5ede654b1ee8e682!2z5rWF6I2J5qmL6KGX5ZyS!5e0!3m2!1sja!2sjp!4v1699753600665!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+                <div class="btn">
+                <a class="back-btn" href="otaru.html">TOPに戻る</a>
+                </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="page.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$('.slider')
+        // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+        .on("init", function () {
+        $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+        })
+        // スライダーの基本設定
+        .slick({
+		autoplay: true,
+		dots: true,
+        fade: true,
+        autoplaySpeed:5000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        speed: 2000,
+        accessibility :true,
+	})
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+</script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>映えるならここ！小樽に行ったら訪れたい場所</title>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <!-- googleフォント      -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+        <!-- カルーセル用 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <!-- カルーセル -->
+                <ul class="slider">
+                    <li><div class="img-height"><img src="img/ao1.jpg" alt="青の洞窟"></div></li>
+                    <li><div class="img-height"><img src="img/ao2.jpg" alt="青の洞窟２"></div></li>
+                    <li><div class="img-height"><img src="img/ao3.jpg" alt="青の洞窟３"></div></li>
+                </ul>
+                <h1 id="title">青の洞窟</h1>
+            </div>
+        </header>
+        <!-- ここから情報 -->
+        <main>
+            <!-- 大枠 -->
+            <div id="topic-patent">
+                <!-- ここで詳細 -->
+                <div class="topic-child">
+                    <p class="topic-grandchild">
+                        神秘的な青い海面が魅力的な小樽の断崖絶壁に存在する洞窟。<br>
+                        青の洞窟といえばイタリアの物を想像すると思いますが実は日本の小樽にも存在するのです。<br>
+                        洞窟に差し込む光の効果で洞窟内が青く輝いて見えます。
+                        これは海水の侵食で形成された特異な地形、海底からの反射度など、 様々な条件が整う場所でのみ見ることができる神秘的な光景です。<br>
+                        洞窟が綺麗に見えるのは5月〜9月下旬がベストシーズンです。<br>
+                        ここへはクルージングで行くのが主な手段となります。クルージング会社の一覧は下記のURLから買う人することができます。ご自身のプランに合ったクルージングを選んで楽しんでください。
+                    </p>
+                </div>
+                <!-- 店舗情報、位置 -->
+                <div id="biginf">
+                <div class="inf1" >
+
+                   <table>
+                    <tr>
+                        <th>所在地</th>
+                        <td>小樽市塩谷１丁目</td>
+                    </tr>
+                    <tr>
+                        <th>アクセス</th>
+                        <td>JR小樽駅から徒歩12分。小樽駅から海・運河方面にまっすぐ下る、小樽運河の石畳遊歩道を左へ進む。</td>
+                    </tr>
+                    <tr>
+                        <th>ベストシーズン</th>
+                        <td>夏5月～9月下旬（特に7～9月）</td>
+                    </tr>
+                    <tr>
+                        <th>関連情報</th>
+                        <td>クルージング一覧は<a href="https://otaru.gr.jp/guidemap/otaru-blue-cave">こちら</a></td>
+                    </tr>
+                   </table>                    
+                </div>
+                <!-- googlemap -->
+                <div class="inf2">
+                    <iframe class="google"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.205277652133!2d140.9244672761115!3d43.226155579946166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ae3cc3a105139%3A0xb4699a8bfcaf5052!2z6Z2S44Gu5rSe56qf!5e0!3m2!1sja!2sjp!4v1701766092995!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+                <div class="btn">
+                <a class="back-btn" href="index.html">TOPに戻る</a>
+                </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="page.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+	$('.slider')
+        // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+        .on("init", function () {
+        $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+        })
+        // スライダーの基本設定
+        .slick({
+		autoplay: true,
+		dots: true,
+        fade: true,
+        autoplaySpeed:5000,
+        arrows: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        speed: 2000,
+        accessibility :true,
+	})
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+</script>
+    </body>
+</html>
