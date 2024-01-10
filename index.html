@@ -186,12 +186,12 @@
             お問い合わせは、<br class="sp-only">メールまたは下記フォームにてお願いいたします。
           </p>
           <a href="mailto:mitsukinozawa1796@gmail.com"><img class="mail" src="img/mail.png" alt=""></a>
-          <form action="https://api.staticforms.xyz/submit" method="post">
+          <form id="validationForm" action="https://api.staticforms.xyz/submit" method="post">
             <input type="text" name="honeypot" style="display:none">
             <!-- STATIC FORMSのアクセスキー -->
             <input type="hidden" name="accessKey" value="b1fc6783-ef5a-4f00-9ad7-e372c470518c">
             <!--メールのタイトル-->
-            <input type="hidden" name="subject" value="お問い合わせフォーム" />
+            <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
             <!--送信先のメールアドレスをvalueに設定する-->
             <input type="hidden" name="replyTo" value="romecitizens@gmail.com">
             <!--redirectToのURLは公開後のURLへリンクする-->
@@ -200,20 +200,20 @@
               <tr>
                 <td>お名前</td>
             <td>
-            <input type="text" name="user_name">
+            <input id="name" type="text" name="user_name">
                             </td>
                        </tr>
                         <tr>
                             <td>メールアドレス</td>
                             <td>
-                                <input type="text" name="user_email">
+                                <input id="email" type="text" name="user_email">
                             </td>
                         </tr>
                         <tr>
                             <td>お問い合わせ種別</td>
                             <td>
-                                <select name="category">
-                                    <option value="選択してください">選択してください</option>
+                                <select id="selectBox" name="category">
+                                    <option value="選択してください" class="selectedItem">選択してください</option>
                                     <option value="ご意見やご感想">ご要望</option>
                                     <option value="不具合について">ご意見やご感想</option>
                                     <option value="その他">その他</option>
@@ -228,7 +228,8 @@
                             </td>
                        </tr>
                     </table>
-                    <input type="submit" value="送信">
+                    <input type="submit" value="送信" id="check-btn">
+                    <div id="output" style="color: red;"></div>
                 </form>
         </div>
       </section>
