@@ -454,7 +454,7 @@ img {
        height: 3em;
      }
      #nav-sp {
-           background-color: rgb(253, 255, 222);
+           background-color: rgb(255, 255, 255);
            position: absolute;
            left: 0;
            top: 0;
@@ -471,7 +471,9 @@ img {
        height: 3em;
      }
      #nav-sp > a {
+           
            display: block;
+           font-weight: bold;
          }
          #nav-sp > a:link {
            color: black;
@@ -481,11 +483,11 @@ img {
          }
          #nav-sp > a:hover {
            color: black;
-           text-decoration: underline;
          }
          #nav-sp > a:active {
            color: black;
          }
+        
          #nav-sp > .menu {
            font-weight: bold;
            text-decoration: none;
