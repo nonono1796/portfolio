@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>SAMURAI ポートフォリオ</title>
+  <title>MITSUKI NOZAWA ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -16,19 +16,32 @@
 
     <!-- header -->
     <header class="header ">
+      <div class="big">
       <div class="container">
-        <h1 class="header-logo">
-          <a href="index.html">SAMURAI TARO</a>
-        </h1>
+          <a class="header-logo" href="index.html"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
-            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
+      <div id="pnav">
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="img/bars.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a href="#" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
+       <a class="menu" href="#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a>
+       <a class="menu" href="#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILL</a>
+       <a class="menu" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a>
+       <a class="menu" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>        
+        </nav>
+      </div>
+    </div>
     </header>
     <!-- /header -->
 
@@ -36,29 +49,30 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">プロフィールサイト</h2>
+          <h2 class="article-title">タイピングゲーム</h2>
           <div class="article-body">
             <p>
-              <img src="img/works-detail/works-2_pc.png" alt="">
+              <img style="border: solid 1px black;" src="img/works-detail/works2.png" alt="">
             </p>
             <p>
-              カメラマンのお客様のプロフィールサイトになります。
+              タイピングゲームのWebアプリです。
             </p>
             <h3>URL</h3>
-            <p><a href="" target="_blank" rel="noopener">ここにURLを入れてください。</a></p>
+            <a href="https://nonono1796.github.io/typing/">https://nonono1796.github.io/typing/</a>
             <h3>担当</h3>
             <p>コーディング</p>
             <h3>サイトの目的</h3>
-            <p>SNS等でリンクをお貼りいただく目的でのサイトになります。</p>
+            <p>タイピング初心者に向けてのタイピングゲームです</p>
             <h3>使用技術</h3>
-            <p>HTML/CSS</p>
+            <p>HTML/CSS/JavaScript</p>
             <h3>デザインについて</h3>
             <p>
-              スクロールなしですぐに情報が読み取れるよう、1枚のページに情報をまとめております。
+              タイピングゲームのみのサイトですので余計な装飾は省いています
             </p>
             <h3>コーディングについて</h3>
             <p>
-              シンプルな技術を使用しておりますので、画像類のデータがございましたら2~3日程度で作成することができます。
+              シンプルな技術を使用しておりますので、データの変更がございましたら2~3日程度で作成することができます。
+              タイピングした文字数に応じてランクが表示されるようにしました
             </p>
           </div>
           <div class="home-link">
@@ -74,7 +88,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="copyright">&copy;SAMURAI TARO</div>
+      <div class="copyright">&copy;NOZAWA MITSUKI</div>
     </footer>
     <!-- /footer -->
 
