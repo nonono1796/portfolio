@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>SAMURAI ポートフォリオ</title>
+  <title>MITSUKI NOZAWA ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -16,19 +16,32 @@
 
     <!-- header -->
     <header class="header ">
+      <div class="big">
       <div class="container">
-        <h1 class="header-logo">
-          <a href="index.html">SAMURAI TARO</a>
-        </h1>
+          <a class="header-logo" href="index.html"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
-            <li class="gnav-item"><a href="index.html#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="index.html#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
+      <div id="pnav">
+      <!-- スマホ用メニューボタン -->
+      <img id="menu-sp" src="img/bars.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <!-- スマホ用ナビゲーション -->
+      <nav id="nav-sp">
+        <img id="close" src="img/close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        <a href="#" onclick="document.getElementById('nav-sp').style.display = 'none'"><img class="header-logo" src="img/logo.PNG" alt="ロゴ"></a>
+       <a class="menu" href="#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a>
+       <a class="menu" href="#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILL</a>
+       <a class="menu" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a>
+       <a class="menu" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>        
+        </nav>
+      </div>
+    </div>
     </header>
     <!-- /header -->
 
@@ -45,7 +58,7 @@
               ヘアーサロンのHPになります。
             </p>
             <h3>URL</h3>
-            <p><a href="" target="_blank" rel="noopener">ここにURLを入れてください。</a></p>
+            <a href="http://nonono1796.site/">http://nonono1796.site/</a>
             <h3>担当</h3>
             <p>WordPress構築・コーディング</p>
             <h3>サイトの目的</h3>
@@ -74,7 +87,7 @@
 
     <!-- footer -->
     <footer class="footer">
-      <div class="copyright">&copy;SAMURAI TARO</div>
+      <div class="copyright">&copy;NOZAWA MITSUKI</div>
     </footer>
     <!-- /footer -->
 
