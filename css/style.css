@@ -250,12 +250,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: -40px;
+    justify-content: space-evenly;
   }
   
   .works-item {
-    width: 31.74603%;
+    width: 45%;
     height: 40%;
-    margin-right: 1.58730%;
+    /* margin-right: 1.58730%; */
     margin-bottom: 40px;
     color: #333;
   }
@@ -273,6 +274,8 @@ img {
   .works-img img {
     border: 1px solid #e6e6e6;
     min-height: 300px;
+    /* max-height: 300px;
+    min-width: 500px; */
   }
   
   .works-name {
