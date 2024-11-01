@@ -50,14 +50,12 @@ function validation(event) {
     if (!emailPattern.test(email)) {
         errors.push('メールアドレスの入力形式が正しくありません。');
     }
-    
-    const alertAreaSelect = document.getElementById('alertAreaSelect');
+
     if(selectBox.options[0].selected === true) {
       errors.push('お問い合わせ内容の選択は必須です');
     };
-  
+
   selectBox.addEventListener('change', () => {
-    const alertAreaSelect = document.getElementById('alertAreaSelect');
     if(selectBox.options[0].selected === false) {
       errors.push('お問い合わせ内容の選択は必須です');
     }
@@ -71,5 +69,5 @@ function validation(event) {
         // バリデーションがOKならフォームを送信
         document.getElementById('validationForm').submit();
     }
-    
+
 }
